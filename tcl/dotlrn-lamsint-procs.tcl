@@ -70,7 +70,7 @@ namespace eval dotlrn_lamsint {
     ad_proc -public add_applet_to_community {
 	community_id
     } {
-	Add the lamsint applet to a specifc dotlrn community
+	Add the lamsint applet to a specific dotlrn community
     } {
 	set portal_id [dotlrn_community::get_portal_id -community_id $community_id]
 
@@ -122,7 +122,7 @@ namespace eval dotlrn_lamsint {
 	community_id
 	user_id
     } {
-	Add a user to a specifc dotlrn community
+	Add a user to a specific dotlrn community
     } {
         set package_id [dotlrn_community::get_applet_package_id -community_id $community_id -applet_key [applet_key]]
         set portal_id [dotlrn::get_portal_id -user_id $user_id]
